@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<!--Team-Nuvs-->
+
+<head>
+    <title>
+        Edlance
+    </title>
+    <link rel="shortcut icon" href="./images/edlancelogo.ico" type="image/x-icon">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <link href="https://unpkg.com/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.4/web3.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!--JS for dropdown change Later-->
+</head>
+
+<body>
+
+    <body>
+        <!-- <div class="h-16 bg-yellow-500  shadow-xl "> -->
+		<!--Exclaimation-->
+		<div class="text-sm p-1 bg-blue-500 text-white w-full font-bold text-center" >
+            This Deployment is a Prototype of EdLαnce. No Ethereum crypto/Test-Ethereum required to use it. Transactions Demonstrated will not take place in reality. <a class="px-1 hover:text-white underline text-black " target="_blank" href="https://www.notion.so/EdL-nce-Website-438a4a67320249e6876319ea046781c3">Learn More</a> 
+        </div>
+		<!--Exclaimation end-->
+        <div class="h-16 text-center bg-gradient-to-r from-purple-700 to-blue-600  shadow-xl ">
+            <nav class=" p-3 ">
+                <div class="inline  ">
+                    <h1 class="inline tracking-wider text-gray-100 text-3xl font-bold ">
+                        <svg class="w-8 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+                                    </svg> EdLαnce
+                    </h1>
+                    <abbr title="Verified Expert" style="border: none;
+                                text-decoration: none;">
+                                <span class="text-white inline cursor-pointer text-sm"  >Expert 
+        
+                                        <svg class="w-4 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </abbr>
+					<!--Dropdown-->
+                <div class="inline float-right">
+                    <div x-data="{ dropdownOpen: false }" class="relative">
+                        <button @click="dropdownOpen = !dropdownOpen" class="relative z-10 block rounded-md bg-white p-2 focus:outline-none">
+                    <svg class="h-5 w-5 text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+
+                        <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+
+                        <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+                            <a href="/expert-dash" class="block px-4 py-2 text-left text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
+                      Question dashboard
+                    </a>
+                            <!-- <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
+                      Help
+                    </a>
+                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
+                      Settings
+                    </a> -->
+                            <a href="/" class="block px-4 py-2 text-left text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
+                      Sign Out
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                <!--********************************-->
+                </div>
+
+            </nav>
+        </div>
+
+
+
+
+
+        <div class=" m-20">
+            <h1 class="text-center text-2xl font-semibold text-gray-600">
+                Post Your Answer
+
+                <svg class="w-8 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+
+
+            </h1>
+
+
+            <!-- display questions -->
+            <script>
+                var quest = <%- JSON.stringify(result)%>;
+                var quill;
+                $(document).ready(async function() {
+                    // var qs = await fetchAllQuestions();
+                    const params = new URLSearchParams(window.location.search)
+                    var i = params.get('id')
+                    var qid = params.get('qid')
+                    // var q = qs[parseInt(quest[i]._id)]
+                    console.log(i);
+                    $("body").append(
+                        '<div class="grid">' +
+                        '<div class="mt-4 bg-gray-100 rounded w-1/2 m-auto p-4 shadow-md">' +
+                        '<h1 class="text-red-500 text-sm">' +
+                        '<!-- ejs if else condition if ETH>100 change priority red ETH<10 to green else black for expire! -->' +
+                        '<svg class="w-4 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">' +
+                        '<path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z" />' +
+                        '<path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd" />' +
+                        '</svg>' +
+                        'Priority' +
+                        '<!-- set priority --></h1>' +
+
+                        "                            <!-- question content -->" +
+                        '<p class="font-semibold pt-4 pb-2 px-2">'
+                        // +quest[i].question +
+                        +
+                        '<div id="quill' + i + '"></div>' +
+                        '</p>' +
+
+                        '<!-- answer Textarea -->' +
+                        '<form name=answer id="answer">' +
+                        '<input type="hidden" name="_id" value=' + qid + '>' +
+                        '</form>' +
+                        '<p class="text-gray-500 font-mono text-sm pb-2">'
+                        // +'<textarea form="answer" id="textareaQuestion" name="answers" class="px-2 py-1 w-full outline-none translate-x-0  focus:border-blue-500 rounded border-2  h-24 hover:bg-white hover:border-blue-500 " placeholder="Write Your Solution..."></textarea>' +
+                        +
+                        // '<div name="questions" id="textareaQuestion" class="px-2 focus:border-blue-500 py-1 w-full outline-none translate-x-0  border-2 border-gray-300 h-24  hover:border-blue-300"><!-- quill text editor --></div>' +
+                        '<div class="h-72 bg-white mb-2"><div name="questions" id="textareaQuestion" class="px-2 focus:border-blue-500 py-1 w-full outline-none translate-x-0  border-2 border-gray-300 hover:border-blue-300"><!-- quill text editor --></div></div>' +
+
+                        '</p>' +
+                        '<div class="block float-right ">' +
+
+						'<button id="" form="answer" onclick="func(' + i + ',' + 0 + ')" class=" focus:outline-none  bg-blue-500  text-white px-2 ml-auto rounded ">Post</button>' +
+
+                        // '<button id="" form="answer" onclick="func(' + i + ',' + q.bounty + ')" class=" focus:outline-none  bg-blue-500  text-white px-2 ml-auto rounded ">Post</button>' +
+                        '<input id="" type="file" hidden>' +
+                        '</div>' +
+
+                        '<div class="block">' +
+
+                        // '<h1 class="text-green-500 text-md font-bold ">' +
+                        // 'mETH Dummy Bounty' + /*metamaskWeb3.utils.fromWei(q.bounty, 'milli') +*/ '/-' +
+                        // '<!-- set ETH -->' +
+                        // '</h1>' +
+                        // '<p class="inline px-8 text-sm text-gray-400">' +
+                        // '23:06' +
+                        // '</p>' +
+                        '</div>' +
+                        '</div>' +
+
+                        '</div>');
+                    quill = new Quill('#textareaQuestion', {
+                        theme: 'snow',
+                        placeholder: 'Post Your Answer...',
+                        modules: {
+                            toolbar: toolbarOptions
+                        }
+                    })
+
+                    // quill question
+
+                    const quillQuestion = new Quill(`#quill${i}`, {
+                        theme: 'snow',
+                        modules: {
+                            toolbar: false
+                        }
+                    })
+                    quillQuestion.setContents(JSON.parse(quest[i].question))
+
+                });
+
+                // quill
+                var toolbarOptions = [
+                    [{
+                        'header': [1, 2, 3]
+                    }],
+                    ['bold', 'italic', 'underline', 'strike'], // toggled buttons
+                    ['blockquote', 'code-block'],
+                    ['link', 'image', 'video'],
+                    [{
+                        'list': 'ordered'
+                    }, {
+                        'list': 'bullet'
+                    }],
+                    [{
+                        'script': 'sub'
+                    }, {
+                        'script': 'super'
+                    }], // superscript/subscript
+                    [{
+                        'color': []
+                    }, {
+                        'background': []
+                    }], // dropdown with defaults from theme
+                    ['clean'] // remove formatting button
+                ];
+
+                async function func(i, bounty) {
+
+                    //bounty1 = toString(bounty)
+                    event.preventDefault();
+                    //bounty1 = metamaskWeb3.utils.toBN(bounty);
+
+                   // amt = metamaskWeb3.utils.toWei(bounty1, 'wei');
+                   // console.log(i + ' ' + amt)
+                   // const withdraw = await ansedWithdraw(i, "e", amt);
+                    //console.log(withdraw);
+                    var request = new XMLHttpRequest();
+                    var formdata = new FormData(answer)
+                    console.log(quill.getContents())
+                    formdata.append('answers', JSON.stringify(quill.getContents()))
+                    request.open("POST", "/expAns");
+                    //request.setRequestHeader("Content-Type", "application/json");
+                    var formdata1 = '_id=' + formdata.get("_id") + '&answers=' + formdata.get("answers");
+                    //var formdata= {"_id":0}
+                    // request.setRequestHeader("Content-Type", "application/json")
+                    console.log();
+                    request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    request.send(formdata1);
+                    window.location.href = "/expert-dash";
+                };
+            </script>
+
+
+
+
+    </body>
+
+
+    <!-- <script src="./js/utils.js"></script>
+
+    <script>
+        var provider = setProvider();
+    </script> -->
+
+</body>
+
+</html>
