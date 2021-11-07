@@ -1,15 +1,16 @@
 {
-  "name": "get-started-node",
+  "name": "edlance1-0",
   "main": "server.js",
-  "description": "An introduction to developing Node.js apps on the IBM Cloud platform",
-  "version": "0.2.0",
+  "description": "D-App for Freelancing in Education",
+  "version": "0.1.0",
   "private": false,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/IBM-Cloud/get-started-node"
+    "url": "https://github.com/soumi0705/Edlance1-0.git"
   },
   "dependencies": {
     "@cloudant/cloudant": "^4.3.0",
@@ -23,6 +24,6 @@
     "mongodb": "^3.7.3",
     "socket.io": "^4.3.1"
   },
-  "author": "IBM Corp",
+  "author": "Soumitro Datta",
   "license": "Apache-2.0"
 }
